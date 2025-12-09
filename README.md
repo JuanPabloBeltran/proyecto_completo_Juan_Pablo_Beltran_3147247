@@ -24,7 +24,7 @@ Instalación en local
 
 Clonar el repositorio:
 
-git clone https://github.com/usuario/repositorio.git
+git clone https://github.com/JuanPabloBeltran/proyecto_completo_Juan_Pablo_Beltran_3147247.git
 
 Backend
 cd backend
