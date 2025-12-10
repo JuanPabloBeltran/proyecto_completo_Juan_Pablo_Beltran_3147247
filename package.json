@@ -1,0 +1,17 @@
+{
+  "name": "proyecto-tareas-netlify",
+  "version": "1.0.0",
+  "description": "Lista de tareas con Netlify",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix proyecto/backend && npm install --prefix proyecto/frontend",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "pg": "^8.10.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}

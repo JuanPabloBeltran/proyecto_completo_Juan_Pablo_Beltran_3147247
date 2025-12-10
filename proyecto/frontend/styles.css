@@ -1,0 +1,52 @@
+/* frontend/styles.css - diseño simple con paleta moderna */
+:root{
+  --primary:#f97316;
+  --green:#d1f5e8;
+  --red:#ffe0e0;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --accent:#10b981;
+}
+
+*{box-sizing:border-box;font-family: 'Roboto', sans-serif;}
+body{margin:0;background:#f3f4f6;padding:40px 10px;color:var(--text)}
+.container{max-width:760px;margin:0 auto}
+h1{text-align:center;font-size:32px;margin-bottom:18px;font-weight:700;color:var(--primary)}
+
+.form-row{display:flex;gap:10px;justify-content:center;margin-bottom:16px}
+.form-row input{padding:10px;border:2px solid #e5e7eb;border-radius:6px;min-width:0;background:#fff;transition:border-color 0.2s}
+.form-row input:focus{outline:none;border-color:var(--primary)}
+.form-row #title{width:32%}
+.form-row #description{width:52%}
+.btn{padding:8px 12px;border-radius:6px;border:none;cursor:pointer;transition:all .15s;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.btn.primary{background:var(--primary);color:#fff;font-weight:600}
+.btn.primary:hover{background:#ea580c;box-shadow:0 4px 12px rgba(249,115,22,.2)}
+.btn.primary:active{transform:translateY(2px);opacity:.95}
+.btn.icon{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:6px}
+
+.tasks-list{display:flex;flex-direction:column;gap:12px}
+
+.task{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.08);
+  background:#fff;transition:all 0.2s;border-left:4px solid #e5e7eb;
+}
+
+.task-left{display:flex;align-items:center;gap:16px}
+.task-title{font-weight:500;color:var(--text)}
+.task-desc{color:var(--muted);font-size:13px;margin-top:4px}
+
+.task-actions{display:flex;gap:10px;align-items:center}
+.icon-btn{width:36px;height:36px;border-radius:6px;border:none;cursor:pointer;display:inline-grid;place-items:center;font-size:16px;transition:all 0.2s}
+
+.check{background:#d1f5e8;border:2px solid #10b981;color:#047857}
+.check:hover{background:#a7e8da;transform:scale(1.05)}
+.delete{background:#ffe0e0;border:2px solid #ef4444;color:#dc2626}
+.delete:hover{background:#ffcccc;transform:scale(1.05)}
+
+.completed .task-title{text-decoration:line-through;color:var(--muted)}
+.completed{background:#d1f5e8;border-left-color:var(--accent)}
+
+.not-completed{background:#fff8f0;border-left-color:var(--primary)}
+
+.centered{display:flex;align-items:center;justify-content:center}
