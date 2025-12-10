@@ -1,5 +1,5 @@
 [build]
-  command = "npm install --prefix proyecto/backend && npm install --prefix proyecto/frontend"
+  command = "npm install"
   functions = "functions"
   publish = "proyecto/frontend"
 

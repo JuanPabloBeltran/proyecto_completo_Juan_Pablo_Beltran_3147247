@@ -1,0 +1,12 @@
+{
+  "name": "todo-frontend",
+  "version": "1.0.0",
+  "description": "Frontend de lista de tareas",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "build": "echo 'Frontend is static, no build needed'"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
