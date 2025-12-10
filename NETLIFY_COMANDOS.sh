@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# 🚀 Comandos para conectar con Netlify
+# Copia y pega estos comandos en tu terminal
+
+echo "📌 PASOS PARA NETLIFY"
+echo ""
+echo "1. El proyecto ya está listo (netlify.toml creado)"
+echo ""
+echo "2. Hacer push al repositorio:"
+echo "   git push origin main"
+echo ""
+echo "3. En Netlify (https://netlify.com):"
+echo "   • New site > Import an existing project"
+echo "   • Seleccionar GitHub"
+echo "   • Seleccionar repositorio: proyecto_completo_Juan_Pablo_Beltran_3147247"
+echo ""
+echo "4. Configurar variables de entorno en Netlify:"
+echo "   • Site settings > Build & deploy > Environment"
+echo "   • DATABASE_URL = tu_postgresql_url"
+echo "   • NODE_ENV = production"
+echo ""
+echo "5. Netlify detectará netlify.toml y desplegará automáticamente"
+echo ""
+echo "📍 Tu sitio estará en: https://tu-sitio.netlify.app"
+echo ""
+echo "---"
+echo ""
+echo "Para probar localmente con Netlify CLI:"
+echo "   npm install -g netlify-cli"
+echo "   cd /workspaces/proyecto_completo_Juan_Pablo_Beltran_3147247"
+echo "   netlify dev"
+echo "   # Accede a http://localhost:8888"
