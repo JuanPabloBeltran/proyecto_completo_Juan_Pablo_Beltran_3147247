@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: todo-backend
+    name: backend
     env: node
     plan: free
     root: proyecto/backend
